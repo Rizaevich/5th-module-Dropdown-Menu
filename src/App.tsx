@@ -1,17 +1,17 @@
 import * as React from "react";
-import './main.global.css'
-import {hot} from "react-hot-loader/root";
-import {Layout} from "./shared/Layout";
-import {Header} from "./shared/Header";
-import {Content} from "./shared/Content";
-import {CardsList} from "./shared/CardsList";
-import {generateId} from "./utils/react/generateRandomIndex";
-import {Dropdown} from "./shared/Dropdown";
+import { hot } from "react-hot-loader/root";
+import './main.global.css';
+import { CardsList } from "./shared/CardsList";
+import { Content } from "./shared/Content";
+import { Header } from "./shared/Header";
+import { Layout } from "./shared/Layout";
+import { generateId } from "./utils/react/generateRandomIndex";
+import { EColor, Text } from "./shared/Text";
 
 const LIST = [
-    {value: ' some',},
-    {value: 'other some'},
-    {value: ' some',},
+    { value: ' some', },
+    { value: 'other some' },
+    { value: ' some', },
 ].map(generateId)
 
 function AppComponent() {
@@ -20,16 +20,18 @@ function AppComponent() {
 
     return (
         <Layout>
-            <Header/>
+            <Header />
             <Content>
-                <CardsList/>
-             <Dropdown button={<button>Test</button>}>
-                 <ul><li>1</li></ul>
-             </Dropdown>
+                <CardsList />
+                <br />
+                <Text As="h1"  size={28} color={EColor.green}> Label1</Text>
+                <Text As="div" size={16}> Label1</Text>
+                <Text size={16} mobileSize={12} color={EColor.orange}> Label1</Text>
             </Content>
         </Layout>
     )
 }
 
-export const App = hot(() => <AppComponent/>)
+export const App = hot(() => <AppComponent />)
+
 

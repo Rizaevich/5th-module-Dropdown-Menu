@@ -22,11 +22,7 @@ function AppComponent() {
         <Layout>
             <Header />
             <Content>
-                <CardsList />
-                <br />
-                <Text As="h1"  size={28} color={EColor.green}> Label1</Text>
-                <Text As="div" size={16}> Label1</Text>
-                <Text size={16} mobileSize={12} color={EColor.orange}> Label1</Text>
+                <CardsList />                
             </Content>
         </Layout>
     )

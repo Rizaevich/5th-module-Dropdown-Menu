@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:dev": "cross-env NODE_ENV=development webpack --config webpack.config.js",
     "build:prod": "cross-env NODE_ENV=production  webpack --config webpack.config.js",
-    "dev": "cross-env NODE_ENV=development node ./bin/dev.js",
+    "dev": "cross-env NODE_ENV=development CLIENT_ID=frZSx_8dqhnDAfia6n0gVw node ./bin/dev.js",
     "start": "cross-env NODE_ENV=production node server"
   },
   "author": "",
